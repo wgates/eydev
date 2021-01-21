@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://eydev.com/sitemap.xml
