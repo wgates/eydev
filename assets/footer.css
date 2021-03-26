@@ -122,6 +122,7 @@ footer .footer-end {
         justify-content: space-between;
         align-items: center;
         margin: 5rem 0 1rem 0;
+        max-width: 1000px;
     }
 
     footer .rights {
