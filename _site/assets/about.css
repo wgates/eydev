@@ -1,0 +1,10 @@
+.about img {
+ max-width: 100%;
+}
+
+@media (min-width: 769px) {
+.about {
+    max-width:1000px;
+    margin:0 auto;
+}
+}

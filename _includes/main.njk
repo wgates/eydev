@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+
+    <meta name="description" content="{{ description }}" />
+    <link rel="canonical" href={{ page.url }}>
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:title" content="{{ title  }}"/>
+    <meta property="og:url" content={{ page.url }} />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:image" content="/assets/logo.jpg" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon16x16.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/normalize.css">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/header.css">
+    <link rel="stylesheet" href="/assets/eydev.css">
+    <link rel="stylesheet" href="/assets/footer.css">
+    <link rel="stylesheet" href="/assets/pages.css">
+    
+  </head>
+  <body>
+
+  <div class="container">
+    {% include 'header.njk' %}
+    
+    {{ content | safe }}
+
+    </div>
+
+     {% include 'footer.njk' %}
+
+    <div id="burgerMenu" style="visibility: hidden;">
+        <ul>
+            <li><a href="/about">Who We Are</a></li>
+            <li><a href="/services">What We Do</a></li>
+            <li><a href="/portfolio">What We've Created</a></li>
+            <li><a href="/contact">How To Contact Us</a></li>
+        </ul>
+        <ul class="hamburgerSocial">
+            <li><a href="https://instagram.com/eydev" alt="eydev instagram" target="_blank">instagram</a></li>
+            <li><a href="https://facebook.com/eydev" alt="eydev facebook" target="_blank">facebook</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function hamBurger() {
+          var x = document.getElementById("burgerMenu");
+          if (x.style.visibility === "visible") {
+            x.style.visibility = "hidden";
+            x.style.opacity = "0";
+          } else {
+            x.style.visibility = "visible";
+            x.style.opacity = "1";
+          }
+        }
+
+          function toggleMenu() {
+            y = document.querySelector(".hamburger-icon");
+            y.classList.toggle("click");
+        }
+        </script>
+
+  </body>
+</html>

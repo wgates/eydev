@@ -1,0 +1,131 @@
+footer {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #FF7F50;
+    border-radius: 0 100px 0 0;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    color:#fff;
+}
+
+footer p {
+    color: #fff;
+    font-weight: 300;
+}
+
+footer .footer-menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+footer .footer-menus .menu h3 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom:2rem;
+}
+
+footer .footer-menus .menu ul {
+    margin:0;
+    padding:0;
+}
+
+footer .footer-menus .menu ul li {
+    list-style: none;
+    color: #fff;
+    font-size:1rem;
+    padding-bottom: 1rem;
+}
+
+footer .footer-menus .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+footer .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom:0;
+}
+
+footer .contact ul {
+    margin: 2rem 0;
+    padding: 0;
+}
+
+footer .contact ul li {
+    color: #fff;
+    list-style: none;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+footer .contact ul li span {
+    margin-right:2rem;
+}
+
+footer .rights {
+    color: #fff;
+    font-size: 0.5rem;
+    text-align: left;
+    display: flex;
+    align-self: center;
+}
+
+footer .footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-end {
+    width: 100%;
+}
+
+@media (min-width: 769px) {
+    footer .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+    }
+
+    footer .footer-header {
+        display: flex;
+        flex-direction: column;
+        padding: 0 5rem;
+        max-width: 600px;
+    }
+
+    footer .footer-header h1 {
+        margin-bottom:0;
+    }
+
+    footer .footer-end {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5rem 0 1rem 0;
+    }
+
+    footer .rights {
+        align-self: flex-start;
+        padding-left: 17rem;
+    }
+}

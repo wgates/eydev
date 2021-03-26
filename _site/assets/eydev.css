@@ -1,0 +1,350 @@
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+}
+
+.welcome {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome p {
+    color: #454545;
+    font-size: 1.5rem;
+    text-align:center;
+    padding: 0 1.5rem;
+}
+
+.welcome p span {
+    color: #FF7F50;
+    font-weight: bold;
+}
+
+.whatwedo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding:0 1rem;
+    margin-bottom: 2rem;
+}
+
+.whatwedo::before {
+    content: "";
+    background-image: url(/assets/images/whatwedo-left.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 300px;
+    left: -5%;
+    top: 15%;
+    z-index: -1;
+}
+
+.whatwedo::after {
+    content: "";
+    background-image: url(/assets/images/whatwedo-right.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 400px;
+    right: -15%;
+    top: 25%;
+    z-index: -1;
+}
+
+.whatwedo img {
+    max-width: 90%;
+    padding: 1rem 0;
+}
+
+.ourprocess {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding:0 1rem;
+    margin-bottom: 25px;
+}
+
+.ourprocess .process-blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.ourprocess .process-blocks h2 {
+    border-bottom: none;
+    margin: 0;
+}
+
+.ourprocess .process-blocks p {
+    text-align:center;
+}
+
+.recentlaunch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding:0 1rem;
+    margin-bottom: 2rem;
+}
+
+.recentlaunch::before {
+    content: "";
+    background-image: url(/assets/images/recentlaunch-left.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 330px;
+    left: -5%;
+    top: 12%;
+    z-index: -1;
+}
+
+.recentlaunch::after {
+    content: "";
+    background-image: url(/assets/images/recentlaunch-right.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 650px;
+    right: -20%;
+    top: 45%;
+    z-index: -1;
+}
+
+.recentlaunch .launch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.recentlaunch .launch h2 {
+    border-bottom: none;
+    padding:0 1rem;
+}
+
+.recentlaunch .launch ul {
+    margin: 1rem 0 1rem 0;
+    padding:0;
+}
+
+.recentlaunch .launch ul li {
+    list-style:none;
+    font-size: 1.5rem;
+}
+
+.ourpromise {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        margin-bottom: 2rem;
+}
+
+.ourpromise .promise-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.ourpromise h2 {
+    font-size: 0.75rem;
+    font-weight: 100;
+    border-bottom: 0;
+    color:#454545;
+}
+
+.ourpromise .promises {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ourpromise .promises h3 {
+    font-size: 1.5rem;
+    color:#454545;
+    margin: 1rem 0;
+}
+
+.ourpromise .promises h3 span {
+    color:#FF7F50
+}
+
+.ourpromise .promises svg {
+    margin-right:15px;
+    width: 55px;
+}
+
+.ourpromise .mobilelogo-promise {
+    margin: 3.5rem auto;
+    width: 100vw;
+    margin-left: calc((100% - 100vw) / 2);
+}
+
+.ourpromise .promiselogo {
+    display:none;
+}
+
+@media (min-width: 769px) {
+
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:3rem;
+        height:90vh;
+    }
+
+    .welcome p {
+        font-size: 3rem;
+        max-width: 800px;
+        text-align: left;
+    }
+
+    .whatwedo {
+        margin-bottom: 5rem;
+    }
+
+    .whatwedo .whatwedo-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4rem;
+    }
+
+    .whatwedo .whatwedo-block img {
+        max-width: 40%;
+    }
+    
+    .whatwedo .whatwedo-block p {
+        padding:0 4rem;
+    }
+
+    .whatwedo::before {
+        content: "";
+        background-image: url(/assets/images/whatwedo-dleft.png);
+        background-size: 80%;
+        width: 400px;
+        height: 500px;
+        left: -2%;
+    }
+    
+    .whatwedo::after {
+        content: "";
+        background-image: url(/assets/images/whatwedo-dright.png);
+        background-size: 80%;
+        width: 330px;
+        height: 435px;
+        right: -10%;
+        z-index: -1;
+        top: 10%;
+    }
+
+    .ourprocess {
+        margin-bottom: 7rem;
+    }
+
+    .ourprocess .ourprocess-blocks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .ourprocess .process-blocks {
+        padding:0 2em;
+    }
+
+    .recentlaunch {
+        margin-bottom: 10rem;
+    }
+
+    .recentlaunch .launch-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4rem;
+    }
+
+    .recentlaunch .launch {
+        padding:0 8rem;
+        align-items: flex-start;
+    }
+
+    .recentlaunch::before {
+        background-image: url(/assets/images/recentlaunch-dleft.png);
+        width: 400px;
+        height: 100%;
+    }
+    
+    .recentlaunch::after {
+        background-image: url(/assets/images/recentlaunch-dright.png);
+        width: 400px;
+        height: 100%;
+        right: -15%;
+        top: 60%;
+    }
+
+    .ourpromise h2 {
+        font-size: 1.75rem;
+    }
+
+    .ourpromise .promise-container {
+        display:flex;
+        flex-direction: row;
+    }
+
+    .ourpromise .promiselogo {
+        width:50%;
+        margin-left:-2%;
+        display: block;
+    }
+
+    .promise-list {
+        display: flex;
+        width: 100%;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 0 3rem;
+    }
+
+    .ourpromise .promises {
+        width: 350px;
+    }
+
+    .ourpromise .promises p {
+        padding:0;
+        margin:0;
+    }
+
+    .mobilelogo-promise {
+        display: none;
+    }
+
+  }
