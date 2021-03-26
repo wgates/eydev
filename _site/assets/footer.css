@@ -125,6 +125,11 @@ footer .footer-end {
         max-width: 1000px;
     }
 
+    footer .contact {
+        align-items: flex-start;
+        padding: 0 5rem;
+    }
+
     footer .rights {
         align-self: flex-start;
         padding-left: 17rem;
