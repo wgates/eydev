@@ -129,9 +129,4 @@ footer .footer-end {
         align-items: flex-start;
         padding: 0 5rem;
     }
-
-    footer .rights {
-        align-self: flex-start;
-        padding-left: 17rem;
-    }
 }
